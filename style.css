@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Times New Roman", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url(pic2.jpg);
+    background-size: cover;
+}
+
+
+.form-sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-form {
+    margin: 0 0 140px 0;
+    background-color: white;
+    border-radius: 10px;
+    width: 350px;
+    /* height: 350px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    border-top: 1px solid grey;
+    text-align: center;
+}
+
+.judul {
+    padding: 20px 0 20px 0;
+    /* border-bottom: 1px solid grey; */
+    width: 300px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.text-input-1 {
+    padding: 20px 0 5px 10px;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.input-usn {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+}
+
+.text-input-2 {
+    padding: 20px 0 5px 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.input-pw {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    margin: 0 0 0px 0;
+}
+
+.button-submit {
+    margin: 10px 0 0 0;
+    /* padding: 15px 0 0 0; */
+    width: 90px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-submit:hover {
+    background-color: #32c93c;
+    transition: ease-in-out 0.3s;
+}
+
+#texterror {
+    text-align: left;
+    font-size: 13px;
+    color: red;
+    border-bottom: 1px solid grey;
+    padding: 0px 0 5px 0;
+    margin: 5px 0 0px 0;
+    display: block;
+    /* min-height: 10px; */
+}

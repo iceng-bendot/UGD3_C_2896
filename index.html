@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGD 3</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <div class="form-sign-in">
+        <div class="container-form">
+            <h1 class="judul">Form Sign In</h1>
+            <form action="">
+                <p class="text-input-1">Username</p>
+                <input type="text" placeholder="Masukkan Username" class="input-usn">
+                <p class="text-input-2">Password</p>
+                <input type="password" name="password" placeholder="Masukkan Password" class="input-pw">
+                <p id="texterror"></p>
+                <button class="button-submit" onclick="errorText()" type="button">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function errorText() {
+            let username = document.querySelector(".input-usn").value;
+            let password = document.querySelector(".input-pw").value;
+            let errorMessage = document.getElementById("texterror");
+
+            if (username === "" || password === "") {
+                errorMessage.innerText = "Username atau Password tidak boleh kosong!";
+            } else {
+                errorMessage.innerText = "";
+                window.location.href = "https://www.instagram.com/vincenthadeus";
+            }
+        }
+    </script>
+</body>
+</html>

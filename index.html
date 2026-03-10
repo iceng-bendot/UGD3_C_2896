@@ -29,9 +29,12 @@
 
             if (username === "" || password === "") {
                 errorMessage.innerText = "Username atau Password tidak boleh kosong!";
-            } else if (8 < password.length < 17) {
-                errorMessage.innerText = "Password minimal 8 karakter dan maksimal 16 karakter";
-            } else {
+            } else if (password.length > 16) {
+                errorMessage.innerText = "Password maksimal 16 karakter";
+            } else if (password.length < 8) {
+                errorMessage.innerText = "Password minimal 8 karakter";
+            }
+            else {
                 errorMessage.innerText = "";
                 window.location.href = "https://www.instagram.com/vincenthadeus";
             }
